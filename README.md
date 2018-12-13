@@ -1,5 +1,5 @@
 # ahk-windowgrid
-Extend the default keyboard shortcuts for moving windows, doubling the vertical grid.
+Extend the default keyboard shortcuts for moving windows, doubling the number of screen columns.
 
 Uses [AutoHotKey](https://www.autohotkey.com/) and is used by pressing <kbd>WIN</kbd>+<kbd>Shift</kbd>+<kbd>Arrows</kbd>.
 
