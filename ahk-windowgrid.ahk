@@ -6,7 +6,7 @@ SysGet, WA_, MonitorWorkArea
 A_ScreenWidthWA:=WA_Right-WA_Left
 A_ScreenHeightWA:=WA_Bottom-WA_Top
 
-+#Up::
+^#Up::
 	WinGetActiveTitle, Title
 	WinRestore, %Title%
 	WinGetActiveStats, Title, Width, Height, X, Y
@@ -21,7 +21,7 @@ A_ScreenHeightWA:=WA_Bottom-WA_Top
 	}
 Return
 
-+#Down::
+^#Down::
 	WinGetActiveTitle, Title
 	WinRestore, %Title%
 	WinGetActiveStats, Title, Width, Height, X, Y
@@ -36,7 +36,7 @@ Return
 	}
 Return
 
-+#Left::
+^#Left::
 	WinGetActiveTitle, Title
 	WinRestore, %Title%
 	WinGetActiveStats, Title, Width, Height, X, Y
@@ -61,7 +61,7 @@ Return
 	}
 Return
 
-+#Right::
+^#Right::
 	WinGetActiveTitle, Title
 	WinRestore, %Title%
 	WinGetActiveStats, Title, Width, Height, X, Y
