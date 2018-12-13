@@ -1,12 +1,10 @@
-; Do not change these, the logic is hardcoded for now, but might be dynamic in the future:
-NumberOfCols := 4
-NumberOfRows := 2
-
-SysGet, WA_, MonitorWorkArea
-A_ScreenWidthWA:=WA_Right-WA_Left
-A_ScreenHeightWA:=WA_Bottom-WA_Top
-
 ^#Up::
+	NumberOfCols := 4
+	NumberOfRows := 2
+	SysGet, WA_, MonitorWorkArea
+	A_ScreenWidthWA:=WA_Right-WA_Left
+	A_ScreenHeightWA:=WA_Bottom-WA_Top
+
 	WinGetActiveTitle, Title
 	WinRestore, %Title%
 	WinGetActiveStats, Title, Width, Height, X, Y
@@ -22,6 +20,12 @@ A_ScreenHeightWA:=WA_Bottom-WA_Top
 Return
 
 ^#Down::
+	NumberOfCols := 4
+	NumberOfRows := 2
+	SysGet, WA_, MonitorWorkArea
+	A_ScreenWidthWA:=WA_Right-WA_Left
+	A_ScreenHeightWA:=WA_Bottom-WA_Top
+
 	WinGetActiveTitle, Title
 	WinRestore, %Title%
 	WinGetActiveStats, Title, Width, Height, X, Y
@@ -37,6 +41,12 @@ Return
 Return
 
 ^#Left::
+	NumberOfCols := 4
+	NumberOfRows := 2
+	SysGet, WA_, MonitorWorkArea
+	A_ScreenWidthWA:=WA_Right-WA_Left
+	A_ScreenHeightWA:=WA_Bottom-WA_Top
+
 	WinGetActiveTitle, Title
 	WinRestore, %Title%
 	WinGetActiveStats, Title, Width, Height, X, Y
@@ -62,6 +72,12 @@ Return
 Return
 
 ^#Right::
+	NumberOfCols := 4
+	NumberOfRows := 2
+	SysGet, WA_, MonitorWorkArea
+	A_ScreenWidthWA:=WA_Right-WA_Left
+	A_ScreenHeightWA:=WA_Bottom-WA_Top
+
 	WinGetActiveTitle, Title
 	WinRestore, %Title%
 	WinGetActiveStats, Title, Width, Height, X, Y
